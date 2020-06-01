@@ -13,7 +13,7 @@ import { setContext } from 'apollo-link-context';
 // import { ApolloProvider } from '@apollo/react-hooks';
 
 const httpLink = new HttpLink({
-  uri: 'http://localhost:4000',
+  uri: 'https://sheltered-springs-16435.herokuapp.com/',
 });
 const AuthLink = setContext(() => {
   const token = localStorage.getItem('jwtToken');
